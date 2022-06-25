@@ -2,11 +2,12 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>Bienvenidxs a MercadoLiebre</title>
+        <title>Crea tu cuenta</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
         <link rel="stylesheet" href="css/styles.css">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet">
+
     </head>
     <body>
         <header>
@@ -18,7 +19,7 @@
                     <div class="input">Buscar productos, marcas y más</div>
                     <div class="submit"><i class="fa fa-search"></i></div>
                 </div>
-                <p><i class="fas fa-hand-holding-usd"></i>Comprá en cuotas y sin tarjeta de crédito</p>
+                <p class="p-header"><i class="fas fa-hand-holding-usd"></i>Comprá en cuotas y sin tarjeta de crédito</p>
             </div>
             <nav>
                 <ul>
@@ -37,64 +38,94 @@
                 <i class="fa fa-bars burger"></i>
             </div>
         </header>
-        <main class="register">
-            <form action="/" method="POST">
-                <input type="text" name="name" placeholder="Nombre y apellido">
-                <input type="text" name="user" placeholder="Nombre de usuario">
-                <input type="email" name="email" placeholder="E-mail">
-                <br>
-                <label for="birth_date"><b>Fecha de nacimiento</b></label>
-                <br>
-                <input type="date" name="birth_date" id="birth_date">
-                <br>
-                <input type="text" name="addres" placeholder="Domicilio">
-                <h4>Perfil del usuario</h4>
-                <div class="profile">
-                    <input type="radio" name="profile" value="buy" id="buy">
-                    <label for="buy">Comprador</label>
-                    <input type="radio" name="profile" value="sell" id="sell">
-                    <label for="sell">Vendedor</label>
-                </div>
+        
+        <main>     
+            <h2>Registrate:</h2>
+            <br>
 
-                <h4>Intereses</h4>
-                <div class="interests">
-                    <div>
-                        <input type="checkbox" name="interests" value="a" id="a">
-                        <label for="a">Electro</label>
-                    </div>
-                    <div>
-                        <input type="checkbox" name="interests" value="b" id="b">
-                        <label for="b">Moda</label>
-                    </div>
-                    <div>
-                        <input type="checkbox" name="interests" value="c" id="c">
-                        <label for="c">Hogar</label>
-                    </div>
-                    <div>
-                        <input type="checkbox" name="interests" value="d" id="d">
-                        <label for="d">Juguetería</label>
-                    </div>
-                    <div>
-                        <input type="checkbox" name="interests" value="e" id="e">
-                        <label for="e">Vida sana</label>
-                    </div>
-                </div>
-                
-                <h4>Elegí tu foto de usuario</h4>
-                <input type="file" name="avatar">
-                <br>
-                <br>
-                <input type="password" name="pass" placeholder="Elegí tu contraseña">
-                <input type="password" name="pass_confirm" placeholder="Confirmá tu contraseña">
-                <br>
-                <br>
-                <input type="submit" value="Enviar">
-                <input type="reset" value="Borrar">
-                <br>
-                <br>
+            <form action="/" method="POST">
+              <label>Nombre y Apellido:</label>
+              <input type="text" name="nombre" placeholder="nombre" required />
+              <br />
+              <br />
+              <label>Nombre de usuario:</label>
+              <input
+                type="text"
+                name="user"
+                placeholder="nombre de usuario"
+                required
+              />
+              <br />
+              <br />
+              <label for="nacimiento">Fecha de nacimiento:</label>
+              <input type="date" name="nacimiento" id="fechaNacimiento" required />
+              <br />
+              <br />
+              <label>Email:</label>
+              <input type="email" name="email" placeholder="email" required />
+              <br />
+              <br />
+              <label for="avatar">Foto de perfil:</label>
+              <input
+                type="file"
+                name="avatar"
+                id="avatar"
+                accept="image/png, image/jpeg"
+              />
+              <br />
+              <br />
+              <!--no estoy seguro de si esta bien lo de la contraseña-->
+              <label>Contraseña:</label>
+              <br />
+              <input
+                type="password"
+                name="pass"
+                placeholder="Elegí tu contraseña"
+                required
+              />
+              <input
+                type="password"
+                name="pass_confirm"
+                placeholder="Confirmá tu contraseña"
+                required
+              />
+              <br />
+              <br />
+              <input
+                type="checkbox"
+                name="TerminosYCondiciones"
+                value="si"
+                id="si"
+                required
+              />
+              <label for="si">Aceptar terminos y condiciones</label>
+              <br />
+              <br />
+              <input type="reset" value="Borrar" />
+              <input type="submit" value="Enviar" />
             </form>
-        </main>
+          </main>        
         <footer>
+            <div class="footer-estilo">
+                <div class="tarjetas">
+                    <i class="fa-solid fa-credit-card"></i>
+                    <h3>Paga con tarjeta o en efectivo</h3>
+                    <p>Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en puntos de pago. ¡Y siempre es seguro!</p>
+                </div>
+                <div class="tarjetas">
+                    <i class="fa-solid fa-gift"></i>
+                    <h3>Envío gratis desde $ 2.500</h3>
+                    <p>Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de
+                    productos. Es un beneficio de Mercado Puntos.</p>
+                </div>
+                <div class="tarjetas">
+                    <i class="fa-solid fa-user-shield"></i>
+                    <h3>Seguridad, de principio a fin</h3>
+                    <p>¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer, porque estás siempre protegid@.</p>
+                    
+                </div>
+            </div>
+            <div>Copyright © 1999-2020 MercadoLiebre S.R.L.</div>
         </footer>
     </body>
 </html>

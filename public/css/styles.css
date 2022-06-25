@@ -20,7 +20,7 @@ p{
 div.top-header{
     display: flex;
     flex-wrap: wrap;
-    padding: 5%;
+    padding: 2%;
     justify-content:flex-end;
 }
 
@@ -70,6 +70,7 @@ header .form .input{
     outline: none;
     color: #666;
     padding: 2px;
+    margin-right: 2px;
 }
 
 header .form .submit{
@@ -177,9 +178,24 @@ article div.main-article{
     padding: 15px;
 }
 
+footer {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0px 20px 0px
+}
+
+.footer-estilo{
+    margin: 15px 5px 25px 5px;
+}
 
 
-@media (min-width: 361px){
+@media (min-width: 320px){
+
+    nav {
+        display: none;
+    }
+
     main section article .description{
         display: block;
     }
@@ -206,7 +222,11 @@ article div.main-article{
     }
 }
 
-@media (min-width: 769px){
+@media (min-width: 768px){
+
+    .price{
+        font-size: 15px;
+    }
     main section div.products article{
         width: 22%;
     }
@@ -239,14 +259,16 @@ article div.main-article{
         display: none;
     }
 
+    main section article{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+    header .form{
+        font-size: 16px;
+    }
 
 
 }
-
-@media (max-width: 768px){
-    main section article{
-            box-shadow: 0px 0px 10px rgb(100, 100, 100);
-        }}
 
 @media (min-width: 1024px){
     .description:hover{
@@ -264,4 +286,18 @@ article div.main-article{
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }
     
+
+    .footer-estilo{
+        display: flex;
+        flex-wrap: nowrap;
+
+    }
+
+    header .form{
+        font-size: 20px;
+    }
+
+    .p-header{
+        font-size: 16px;
+    }
 }
