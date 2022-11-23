@@ -17,6 +17,10 @@ app.get('/register', (req,res)=>{
     res.sendFile(__dirname + '/views/register.html');
 });
 
+app.get('/certificacion', (req,res)=>{
+    res.sendFile(__dirname + '/views/certificacion.html');
+});
+
 app.listen(PORT, ()=>{
     console.log(`Server running at http://${HOST}:${PORT}/`);
 });
