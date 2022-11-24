@@ -34,36 +34,20 @@
 	</p>	
 	
 	<div width="100%" style="text-align: center;">	 
-		<img src="images/foto1.png " width="60%" style="visibility:visible;"/>
+		<img src="images/foto0.png " width="60%" style="visibility:visible;"/>
 		<br><br>
 		<img src="images/foto1.PNG" width="60%" style="visibility:visible;"/>
         <br><br>
-		<img src="images/foto1.png" width="60%" style="visibility:visible;"/>
+		<img src="images/foto2.png" width="60%" style="visibility:visible;"/>
         <br><br>
 		<img src="images/foto3.png" width="60%" style="visibility:visible;"/>
         <br><br>
 		<img src="images/foto4.png" width="60%" style="visibility:visible;"/>
         <br><br>
-		<img name="imgDorso" src="data:image/gif;base64,null"  width="60%" style="visibility:hidden;"/>
+		
 
 	</div>	 
 	
-	<script >
-		window.onload = function(){
-		   
-		   var elements = document.getElementsByName('imgDorso');
-		   
-		   var i;
-		   for (i = 0; i < elements.length; i++) {
-			   console.log( i + ' - ' + elements[i].src );
-		       if (elements[i].src != 'data:image/gif;base64,null' ) {
-		    	   elements[i].style.visibility = "visible"; 
-		       } else {
-		    	   console.log( i + ' - diferente !!'  );
-		       }
-		   }
-		   
-		};
-	</script>
+
 </body>
 </html>
